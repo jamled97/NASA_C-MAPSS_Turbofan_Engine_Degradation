@@ -530,5 +530,8 @@ error = last_rul_predicted.sub(rul_df["RUL"], axis = 0)
 
 score_df = pd.DataFrame(score)
 plt.scatter(error, score_df)
+plt.xlabel('error')
+plt.ylabel('score')
+plt.legend()
 plt.show()
 
