@@ -456,10 +456,7 @@ model = Sequential([
 
 
 
-                                            #Model Fitting
-
-#lstm_pipeline = model
-#lstm_pipeline.fit(X_seq_3d, y_seq_3d, batch_size = 64, epochs = 500, callbacks= [early_stopping, checkpoint], validation_split = 0.1, shuffle= False)
+                                                    #Model Loading
 
 lstm_pipeline = keras.models.load_model('state_space_model_bilstm_30_ema.keras')
 
